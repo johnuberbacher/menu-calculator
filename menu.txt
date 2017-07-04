@@ -1,0 +1,10 @@
+Dish1 $3.99
+Dish2 $6.99
+Dish3 $11.99 
+Dish4 $8.99 
+Dish5 $7.99 
+Dish6 $7.99 
+Dish7 $10.99 
+Dish8 $5.99 
+Dish9 $4.99 
+Dish0 $9.99 
