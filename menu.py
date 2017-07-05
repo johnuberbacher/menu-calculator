@@ -18,14 +18,20 @@ def start():
 	else:
 		if userInput >= 0:
 			print ("\nOrder Received: #" + str(userInput))
+			
 			for letter in str(userInput):
 				print (str(*menu[int(letter)]))	
 				order.append(str(*menu[int(letter)]))
-			
-			print(*order)
+				
 			orderSum = re.findall("\d+\.\d+", str(order))
-			print(*orderSum)
+			orderAggregate = []
 			
+			for item in orderSum:
+				orderAggregate.append(float(item))
+				
+			orderAggregate = sum(orderAggregate)
+			print ("\nOrder Total: $" + str("%.2f" % orderAggregate) + "\n")
+				
 		else:
 			print("\nSorry, that won't work, enter an integer")
 		
