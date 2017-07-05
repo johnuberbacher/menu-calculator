@@ -1,10 +1,9 @@
-Dish1 $3.99
-Dish2 $6.99
-Dish3 $11.99 
-Dish4 $8.99 
-Dish5 $7.99 
-Dish6 $7.99 
-Dish7 $10.99 
-Dish8 $5.99 
-Dish9 $4.99 
-Dish0 $9.99 
+Chicken Strips - $3.50
+French Fries - $2.50
+Hamburger - $4.00
+Hotdog - $3.50
+Large Drink - $1.75
+Medium Drink - $1.50
+Milk Shake - $2.25
+Salad - $3.75
+Small Drink - $1.25
