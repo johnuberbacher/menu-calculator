@@ -1,10 +1,11 @@
 import os
-	
-# Configure and load menuArray items into memory
-menuArray = []
+import re
+
+# Configure and load menu items into memory
+menu = []
 with open('menu.txt') as inputfile:
 	for line in inputfile:
-		menuArray.append(line.strip().split(','))
+		menu.append(line.strip().split(','))
 
 def start():
 	# Prompt user for orders
@@ -18,10 +19,17 @@ def start():
 		if userInput >= 0:
 			print ("\nOrder Received: #" + str(userInput))
 			for letter in str(userInput):
-				print ("Your item: " + str(*menuArray[int(letter)]))	
+				print (str(*menu[int(letter)]))	
+				order.append(str(*menu[int(letter)]))
+			
+			print(*order)
+			orderSum = re.findall("\d+\.\d+", str(order))
+			print(*orderSum)
+			
 		else:
 			print("\nSorry, that won't work, enter an integer")
 		
 # Keep the program running, 
 while True:
+	order = []
 	start()
