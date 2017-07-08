@@ -1,5 +1,6 @@
 import os
 import re
+import time
 
 # Configure and load menu items into memory
 menu = []
@@ -17,9 +18,12 @@ def start():
 		print("\nSorry, enter an integer")
 	else:
 		if userInput >= 0:
+			time.sleep(0.5)
 			print ("\nOrder Received: #" + str(userInput))
+			time.sleep(0.5)
 			
 			for letter in str(userInput):
+				time.sleep(0.25)
 				print (str(*menu[int(letter)]))	
 				order.append(str(*menu[int(letter)]))
 				
@@ -30,7 +34,9 @@ def start():
 				orderAggregate.append(float(item))
 				
 			orderAggregate = sum(orderAggregate)
+			time.sleep(0.75)
 			print ("\nOrder Total: $" + str("%.2f" % orderAggregate) + "\n")
+			time.sleep(1)
 				
 		else:
 			print("\nSorry, that won't work, enter an integer")
